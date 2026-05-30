@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Cause", cursive;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #153677 , #4e085f);
+    padding: 10px;
+}
+#app{
+    background-color: whitesmoke;
+    max-width: 520px;
+    margin-left: 480px;
+    margin-top: 100px;
+}
+#nav{
+   justify-content: space-around;
+   padding-top: 30px;
+    display: flex;
+}
+#nav img{
+    width: 180px;
+    border-radius: 30px;
+}
+#nav h2{
+    padding-top: 45px;
+    font-size: 38px;
+}
+#main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    background: #edeef0;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+ #main input{
+   flex: 1;
+   border: none;
+   outline: none;
+   background: transparent;
+   padding: 12px;
+   font-weight: 16px;
+}
+#main button{
+    border: none;
+    outline: none;
+    padding: 13px 45px;
+    background-color: rgb(245, 130, 68);
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+} 
+#inp::placeholder{
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+}
+#todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+#to-doList{
+    width: 100%;
+}
+#to-doList li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(10, 221, 240, 0.3);
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: rgb(27, 2, 2);
+    position: relative;
+    transition: box-shadow 0.2s ease;
+}
+#to-doList li:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#to-doList li.checkbox{
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#to-doList li.checkbox:checked{
+    background: #ff6f91;
+    transform: scale(1.1);
+}
+#to-doList li.checkbox::before{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+#to-doList li span{
+    flex: 1;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+.task-buttons{
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+}
+.task-buttons button{
+    background:rgba(255, 194, 209, 0.3) ;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.task-buttons button:hover{
+    transform: scale(1.2);
+}
+.task-buttons .edit-btn{
+    background: rgb(198, 240, 134);
+}
+.task-buttons .delete-btn{
+    background: rgb(206, 95, 95);
+}
